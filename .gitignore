@@ -62,11 +62,3 @@ config/credentials.yml.enc
 # Ignore Docker-related files.
 docker-compose.override.yml
 tmp/pids/server.pid
-
-# Ignore binstubs
-/bin
-!/bin/rails
-!/bin/rake
-!/bin/setup
-!/bin/yarn
-!/bin/dev
