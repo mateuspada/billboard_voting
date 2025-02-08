@@ -1,0 +1,16 @@
+<turbo-frame id="billboard_<%= billboard.id %>">
+  <div class="col">
+    <div class="card shadow-sm h-100">
+      <img src="<%= billboard.image %>" class="card-img-top" alt="Billboard Image">
+      <div class="card-body text-center d-flex flex-column justify-content-between">
+        <h5 class="card-title"><%= billboard.address %></h5>
+        <p class="lead">Votes: <strong><%= billboard.votes %></strong></p>
+        
+        <div class="d-flex justify-content-center gap-2">
+          <%= button_to "👍", votes_billboard_path(billboard, vote: "up"), method: :put, remote: true, class: "btn btn-success" %>
+          <%= button_to "👎", votes_billboard_path(billboard, vote: "down"), method: :put, remote: true, class: "btn btn-danger" %>
+        </div>
+      </div>
+    </div>
+  </div>
+</turbo-frame>

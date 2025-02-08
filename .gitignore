@@ -1,0 +1,72 @@
+# Ignore bundler config.
+/.bundle
+
+# Ignore log and temp files.
+log/*
+tmp/*
+!/log/.keep
+!/tmp/.keep
+
+# Ignore SQLite database and schema dumps.
+db/*.sqlite3
+db/*.sqlite3-journal
+db/schema.rb
+db/seeds.rb
+
+# Ignore PostgreSQL database files.
+db/*.pg
+db/*.pgsql
+
+# Ignore environment variables.
+.env
+.env.development
+.env.production
+
+# Ignore system-generated files.
+node_modules/
+yarn.lock
+package-lock.json
+public/assets/
+public/packs/
+public/packs-test/
+public/uploads/
+storage/
+
+# Ignore compiled files.
+*.rbc
+*.rbo
+*.so
+*.o
+*.pyc
+*.pyo
+*.swp
+*.swo
+*.bak
+*.log
+*.pid
+*.gem
+
+# Ignore Editor/IDE files.
+.vscode/
+.idea/
+*.iml
+
+# Ignore MacOS system files.
+.DS_Store
+*.DS_Store
+
+# Ignore secret keys.
+config/master.key
+config/credentials.yml.enc
+
+# Ignore Docker-related files.
+docker-compose.override.yml
+tmp/pids/server.pid
+
+# Ignore binstubs
+/bin
+!/bin/rails
+!/bin/rake
+!/bin/setup
+!/bin/yarn
+!/bin/dev

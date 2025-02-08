@@ -1,0 +1,23 @@
+<div class="text-center mb-4">
+  <h1 class="display-4">📢 Billboard Voting</h1>
+</div>
+
+<div class="card mb-4">
+  <div class="card-body">
+    <h5 class="card-title">Upload Billboards CSV</h5>
+    <%= form_with url: billboards_path, method: :post, local: true, multipart: true, class: "d-flex align-items-center gap-2" do |form| %>
+      <%= form.file_field :file, accept: ".csv", class: "form-control" %>
+      <%= form.submit "Upload", class: "btn btn-primary" %>
+    <% end %>
+  </div>
+</div>
+
+<h2 class="mb-3">🔥 Billboards Ranking</h2>
+
+<turbo-frame id="billboard-list">
+  <div class="container">
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <%= render @billboards %>
+    </div>
+  </div>
+</turbo-frame>

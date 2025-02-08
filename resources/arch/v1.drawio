@@ -1,0 +1,49 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/26.0.9 Chrome/128.0.6613.186 Electron/32.2.5 Safari/537.36" version="26.0.9">
+  <diagram name="Approach 1" id="dbZ9AVuhewi1InTGgf0s">
+    <mxGraphModel dx="2284" dy="854" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="5MSK_b1xxQgEkrKtCGCc-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="5MSK_b1xxQgEkrKtCGCc-1" target="5MSK_b1xxQgEkrKtCGCc-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5MSK_b1xxQgEkrKtCGCc-1" value="billboard MVC" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="490" y="335" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5MSK_b1xxQgEkrKtCGCc-2" value="Billboard CSV" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="330" width="140" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="5MSK_b1xxQgEkrKtCGCc-3" value="address" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="5MSK_b1xxQgEkrKtCGCc-2">
+          <mxGeometry y="30" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="5MSK_b1xxQgEkrKtCGCc-4" value="image" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="5MSK_b1xxQgEkrKtCGCc-2">
+          <mxGeometry y="60" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="5MSK_b1xxQgEkrKtCGCc-6" value="" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/databases/Azure_Database_PostgreSQL_Server.svg;" vertex="1" parent="1">
+          <mxGeometry x="720" y="333" width="48" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="5MSK_b1xxQgEkrKtCGCc-8" value="/ = home" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="340" y="260" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="5MSK_b1xxQgEkrKtCGCc-9" value="POST /billboards - Payload CSV file" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="290" y="290" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="5MSK_b1xxQgEkrKtCGCc-10" value="GET /billboards - All billboards on database, ordered by vote" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="290" y="333" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="5MSK_b1xxQgEkrKtCGCc-11" value="GET /billboards/{id} - Get specific billboard" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="290" y="390" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="5MSK_b1xxQgEkrKtCGCc-12" value="PUT /billboards/{id}/votes - Get specific billboard" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="290" y="450" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="5MSK_b1xxQgEkrKtCGCc-13" value="I&#39;ll assume that image is a amazon s3 endpoint" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-120" y="320" width="130" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="5MSK_b1xxQgEkrKtCGCc-14" value="I&#39;ll also assume that any user can vote in any billboard up or down (without being registered)" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-120" y="392.5" width="130" height="55" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
